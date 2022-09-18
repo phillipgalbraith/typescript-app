@@ -3,13 +3,18 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function HeaderBar() {
     return (
-        <header className="App-header container-fluid">            
-            <div className="navbar navbar-expand-lg navbar-light bg-light container-fluid d-flex justify-content-between">
+      <nav id="navLinks" className="bg-white nav navbar-expand-lg navbar-light navbar container-fluid d-flex justify-content-between">
+        <div className="bg-white container-fluid">
+          <ul className="bg-white navbar container-fluid navbar-nav mb-2 mb-lg-0 ">
+            <li className="nav-item">
               <div className="navbar-brand">
-                <a className="navbar-brand" href="#">          
-                  <i className="bi bi-hospital text-danger"></i> Cats Treat Cats
+                <a href="#" className="nav-link text-dark me-1 ms-1">
+                  <i className="bi bi-hospital text-danger"></i> 
+                  <> Cats Treat Cats </>
                 </a>
-              </div>
+              </div>     
+            </li> 
+            <li>
               <div>
                 <button className="btn">
                   <i className="bi bi-search"></i>
@@ -22,9 +27,10 @@ function HeaderBar() {
                   <> Sign In </>
                 </button>
               </div>
-            </div>
-
-        </header>
+            </li>
+          </ul>
+        </div>
+      </nav>
     )
   }  
 

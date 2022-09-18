@@ -1,16 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 export const NavLinks: React.FC = () => {    
     
-    useEffect(() => {
-        const navLinks = document.querySelector('#navLinks');
-
-    }, [])
-
-    
-    
     return (
-        <nav id="navLinks" className="nav navbar-expand-lg navbar-light bg-light navbar container-fluid">
+        <nav id="navLinks" className="nav navbar-expand-lg navbar-light navbar container-fluid">
             <div className="container-fluid">
               <ul className="navbar-nav mb-2 mb-lg-0 ">
 
