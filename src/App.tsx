@@ -3,6 +3,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import HeaderBar from './components/HeaderBar';
 import NavLinks from './components/NavLinks';
 import UkraineBar from './components/UkraineBar';
+import ProviderCard from './components/ProviderCard';
 
 
 
@@ -19,19 +20,16 @@ function App() {
        <UkraineBar />
       </div>
       <div className="container">
-        <h2>Cats need medical treatment from cats</h2>
-        {"supercalifragilisticexpealidocious".split("").map( e => {
-            return (
-              <div className="card">
-                <div className="card-body">
-                <h5 className="card-title">Card title</h5>
+        <h2 className="text-center">Cats need medical treatment from cats</h2>
+        <div className="container">  
+          <div className="row" id="topRow">
+            {  "1234".split("").map( e => <ProviderCard /> ) }
+          </div>    
+          <div className="row" id="topRow">
+            {  "1234".split("").map( e => <ProviderCard /> ) }
+          </div>
 
-                  This is some text within a card body.
-                </div>
-              </div>       
-            )
-          })
-        }
+        </div>
       </div>
     </div>
   );

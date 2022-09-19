@@ -1,10 +1,10 @@
 import React from "react";
 
-export const UkraineBar: React.FC = () => {    
+function UkraineBar () {    
     
     return (
-      <div id="ukraineBar" className="mx-auto">
-        We support Ukraine, you can too: <a href="https://saveukraine.org/donate"> Here</a>
+      <div id="ukraineBar" className="mx-auto text-center">
+        We support Ukraine. Donations are making a difference: <a href="https://saveukraine.org/donate"> Here</a>
       </div>
     )
 }
