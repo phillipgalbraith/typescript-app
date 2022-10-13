@@ -6,6 +6,9 @@ css
 JavaScript
 Git
 
+npm install --save-dev file-loader
+
+
 ## Bootstrap
 NavBar
 icons 

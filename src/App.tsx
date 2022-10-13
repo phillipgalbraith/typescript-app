@@ -6,8 +6,14 @@ import UkraineBar from './components/UkraineBar';
 import ProviderCard from './components/ProviderCard';
 
 
-
-
+import agingCatImg from "./components/agingCat.jpg"; 
+import getRealCatImg from "./components/getRealCat.jpg"; 
+import hearingCatImg from "./components/hearingCat.jpg"; 
+import kittenImg from "./components/kitten.jpg"; 
+import momCatImg from "./components/momCat.jpg"; 
+import surgeryCatImg from "./components/surgeryCat.jpg"; 
+import glassesCatImg from "./components/glassesCat.jpg"; 
+import dentistCatImg from "./components/dentistCat.jpg"
 function App() {
   return (
     <div className="App">
@@ -24,10 +30,22 @@ function App() {
         <h2 className="text-center">Feline patients. Feline doctors. Simple.</h2>
         <div className="container">  
           <div className="row" id="topRow">
-            {  ["Aging", "OBGYN", "Pediatrics", "Surgery"].map( e => <ProviderCard area={e} /> ) }
+            {  
+              [
+                ["Aging", agingCatImg], 
+                ["Behavior", momCatImg], 
+                ["Pediatrics", kittenImg], 
+                ["Surgery", surgeryCatImg]
+              ].map( e => <ProviderCard area={e[0]} source={e[1]} /> ) }
           </div>    
           <div className="row" id="topRow">
-            {  ["Pharmacy", "Dentistry", "Optometry", "Hearing"].map( e => <ProviderCard area={e} /> ) }
+            { 
+              [
+                ["Pharmacy", getRealCatImg], 
+                ["Dentistry", dentistCatImg], 
+                ["Optometry", glassesCatImg], 
+                ["Hearing", hearingCatImg]
+              ].map( e => <ProviderCard area={e[0]}  source={e[1]} /> ) }
           </div>
 
         </div>
