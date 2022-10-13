@@ -7,11 +7,12 @@ import ProviderCard from './components/ProviderCard';
 
 
 
+
 function App() {
   return (
     <div className="App">
       <div className="container" id="scroll-head">
-        <HeaderBar />
+        <HeaderBar  />
       </div>
       <div className="container sticky-top bg-white ">
         <NavLinks />
@@ -20,13 +21,13 @@ function App() {
        <UkraineBar />
       </div>
       <div className="container">
-        <h2 className="text-center">Cats need medical treatment from cats</h2>
+        <h2 className="text-center">Feline patients. Feline doctors. Simple.</h2>
         <div className="container">  
           <div className="row" id="topRow">
-            {  "1234".split("").map( e => <ProviderCard /> ) }
+            {  ["Aging", "OBGYN", "Pediatrics", "Surgery"].map( e => <ProviderCard area={e} /> ) }
           </div>    
           <div className="row" id="topRow">
-            {  "1234".split("").map( e => <ProviderCard /> ) }
+            {  ["Pharmacy", "Dentistry", "Optometry", "Hearing"].map( e => <ProviderCard area={e} /> ) }
           </div>
 
         </div>
